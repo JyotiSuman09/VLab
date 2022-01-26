@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="max-width">
+          <div class="logo">
+            <a href="#">CS203 Group<span>18.</span></a>
+          </div>
+          <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="theory.html">Thoery</a></li>
+              <li><a href="pretest.html">Pretest</a></li>
+              <li><a href="procedure.html">Procedure</a></li>
+              <li><a href="simulator.html" target="_blank">Simulation</a></li>
+              <li><a href="posttest.html">Post-test</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+        </div>
+      </nav>
+
+      <section class="prerequisite" id="prerequisite">
+        <div class="max-width">
+            <div class="box">
+                <center><h1>THEORY</h1></center>
+                <p>Decoder:</p>
+                <p>&emsp;
+                  Decoder is a combinational logic circuit that converts the binary
+                  information from n coded inputs to a maximum of 2 n unique outputs.
+                </p>
+                <center><img src="assets/img/2.png" alt=""></center>
+                 <p> Applications of Decoder:</p>
+                 <p>   Decoder are used to input data to a specified output line as is
+                  done in addressing core memory.</p>
+                  <p> It is used n code conversion.</p>
+                  <p> It is also used for data distribution i.e., demultiplexing</p>
+                  <p> It is used as address decoders in CPU memory location
+                  identification.</p>
+                  <p> It decodes the binary input to activate the LED segments so
+                  that the decimal number can be displayed.</p>
+                  <p> They can be the application of switching function often with
+                  the fewer integrated circuit.STUCK AT FAULT:</p>
+                  <p>Before direct jumping into Stuck at Fault let’s know about what is
+                  fault modelling?</p>
+                 <p> After manufacturing a chip, the number of physical defects in a chip
+                  can be too many i.e., may be infinitely large. So many times, this is
+                  impossible to count and analyse all possible faults. So, while testing a
+                  circuit/IC we abstract physical defects and define some logical fault
+                  models.</p>
+                  <p>In this way:</p>
+                  <p> We reduce the number of faults to be considered.</p>
+                  <p> Makes test generation and fault simulation possible.</p>
+                  <p> We can quantitatively compare test-sets to minimize the faults
+                  as minimum as possible.</p>
+                  <p>Note: Defining fault models doesn’t mean circuit has these faults. We
+                  only assume that circuit is behaving like that.</p>
+                  <p>There are different levels of abstraction of fault modelling:</p>
+                  <p>Behavioral</p>
+                  <p>Functional</p>
+                  <p>Structural</p>
+                  <p>Switch level</p>
+                  <p>Geometrical</p>
+                  <p>Among these, the stuck at fault model comes under structural level
+                  fault model and there are 2 types of stuck at fault modelling:</p>
+                  <p> Single stuck at fault modelling</p>
+                  <p> Multiple stuck at fault modelling</p>
+                  <p>Among these two single stuck at fault modelling is most popular.
+                  why?</p>
+                  <p>1. Due to simplicity of single stuck at model it has been widely
+                  used to taste ICs.</p>
+                  <p>2. Some interesting results that A test set that detect all single
+                  stuck at fault detect about >95% of multiple stuck at fault.</p>
+                  <p>3. For tree like circuit it detects all multiple stuck at faults.
+                  SINGLE STUCK AT FAULT MODELLING:</p>
+                  <p> Here we assume the elements (i.e., gates) are absolutely fault
+                  free and circuit lines have fault that they are permanently fixed
+                  at logic 1 or logic 0 due to some failure. (at only one at a given
+                  time)</p>
+                  <p> Very popular fault model as it can model realistic physical
+                  failures.</p>
+                  <p> Faults on line A denoted as “s-a-0” or A/0 similarly for stuck at
+                  1 it is “s-a-1” or A/1.</p>
+                  <p> Total number of possible stuck at fault position is:</p>
+                  <p>No. of gates + No. of input and output + 2*no. of fanout nodes</p>
+                  <center><img width: 450px; src="assets/img/fanout branch.png" alt=""></center>
+                  <p>However, the testing positions can be minimized by</p>
+                  <p> Fault equivalence</p>
+                  <p> Fault dominance</p>
+                  <p>How to minimize stuck at fault position:</p>
+                  <p>1. Fault equivalence:</p>
+                  <p> Two faults f1 and f2 are equivalent if all tests that detect f1 also
+                  detect f2.Example:</p>
+                  <center><img width: 450px; src="assets/img/1.png" alt=""></center>
+                  <p>From total 6 possible faults, we can rule, sa0 at A and sa0 at B
+                  and reduce to total 4 possible faults.</p>
+                  <p> If f1 and f2 are equivalent then for both the faulty function is
+                  same.</p>
+                  <p>2.Fault Dominance:</p>
+                  <p> If all tests for some fault f1 detect another fault f2, then f2 is
+                  said to dominate f1.</p>
+                  <p> If fault f2 dominates f1, then f2 is removed from the fault list.
+                  Example:</p>
+                  <center><img width=450px src="assets/img/a1.jpg" alt=""></center>
+                  <p style="margin-bottom: 20px;"> If two faults dominate each other then they are equivalent.</p>
+            </div>
+        </div>
+    </section>
+
+
+     
+    
+</body>
+</html>
