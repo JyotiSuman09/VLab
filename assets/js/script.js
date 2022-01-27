@@ -196,7 +196,7 @@ function ad_tab() {
   for (let i = 0; i < 16; i++) {
     let str = "d" + i;
     let id = document.getElementById(str);
-    if (id.style.backgroundColor == "rgb(3 255 92)") {
+    if (id.style.backgroundColor == "rgb(3, 255, 92)") {
       bstr[4 + i] = 1;
       outps1[i] = 1;
     } else {
