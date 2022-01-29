@@ -26,17 +26,7 @@
 .navbar .max-width{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.navbar .logo a{
-  color: #333;
-  font-size: 35px;
-  font-weight: 600;
-}
-
-.navbar .logo a:hover{
-  color: black;
+  justify-content: center;
 }
 
 .navbar .menu li{
@@ -47,12 +37,26 @@
 .navbar .menu li a{
   color: #333;
   font-size: 18px;
-  margin-left: 25px;
+  margin:0 12px;
   font-weight: 600;
 }
 
 .navbar .menu li a:hover{
   color: black;
+}
+
+/* Section Styling */
+section{
+  min-height: 90vh;
+}
+
+
+
+/* Footer Styling */
+footer{
+  height: 50px;
+  background-color: #555;
+  float: bottom;
 }
 
 
@@ -111,10 +115,10 @@ input[type="radio"],
 .decoder .max-width .box {
   border: 3px solid black;
   border-radius: 8px;
-  box-shadow: 10px 14px 10px grey;
+  box-shadow: 5px 5px 5px grey;
   display: flex;
   flex-direction: column;
-  margin-top: 32px;
+  margin: 32px 0;
   flex-wrap: wrap;
 }
 .decoder .max-width .box h1 {
@@ -134,7 +138,7 @@ center {
   border: 2px solid;
   width: 6.26rem;
   height: 10.7rem;
-  background-color: cyan;
+  background-color: #d1dae3;
   border-radius: 0.45rem;
   display: flex;
   justify-content: center;
@@ -281,7 +285,7 @@ center {
   font-weight: bold;
   text-align: center;
   border-radius: 8px;
-  box-shadow: 0 0 2px 2px rgb(216, 146, 146);
+  /* box-shadow: 0 0 2px 2px rgb(216, 146, 146); */
 }
 .faulty table,
 th {
