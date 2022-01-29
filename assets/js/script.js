@@ -181,10 +181,10 @@ function ad_tab() {
     let s = "a" + i;
     let di = document.getElementById(s);
     if (di.style.backgroundColor == "tomato") {
-      bstr[i] = 0;
+      bstr[3-i] = 0;
       inps[i] = 0;
     } else {
-      bstr[i] = 1;
+      bstr[3-i] = 1;
       inps[i] = 1;
     }
   }
@@ -223,13 +223,13 @@ function ad_tab() {
   let j = 0;
   for (let i = 0; i < 20; i++) {
     let cell = row.insertCell(i);
-    if (i < 4 && chk == 1) cell.style.backgroundColor = "rgb(37,173,173)";
+    if (i < 4 && chk == 1) cell.style.backgroundColor = "#b3b3b361";
     if (chk == 0) {
-      if (i < 4) cell.style.backgroundColor = "rgb(250,80,110)";
+      if (i < 4) cell.style.backgroundColor = "#b3b3b361";
       else if (i - 4 == flous[j]) {
         cell.style.backgroundColor = "rgb(250,80,110,0.72)";
         j++;
-      } else cell.style.backgroundColor = "pink";
+      } else cell.style.backgroundColor = "#fff";
     }
     cell.innerHTML = bstr[i];
   }
@@ -252,7 +252,7 @@ function ad_tab() {
       str = str + "," + flts[i];
     }
   }
-  if (chk == 0) {
+  if (str != "NA") {
     cell.style.backgroundColor = "pink";
   }
   cell.innerHTML = str;
