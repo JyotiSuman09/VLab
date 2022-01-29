@@ -69,10 +69,14 @@ section{
   font-size: 30px;
 }
 
-.references .max-width ul li{
+.references .max-width ol li{
   padding: 8px 10px;
   margin: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+.references .brb{
+  font-size: 1.2rem;
 }
 
 
@@ -138,7 +142,7 @@ input[type="radio"],
 /* Simulator Styling */
 
 .decoder .max-width .box {
-  border: 3px solid black;
+  border: 3px solid rgba(0, 0, 0, 0.685);
   border-radius: 8px;
   box-shadow: 5px 5px 5px grey;
   display: flex;
