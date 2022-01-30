@@ -65,6 +65,24 @@ section{
   font-size: 1rem;
 }
 
+.theory .innerText p{
+  padding: 5px 0;
+}
+.theory .innerText span{
+  font-size: 1.5rem;
+  margin: 10px 0;
+  padding: 10px 0;
+  color: rgb(0, 150, 196);
+}
+
+.theory .innerText .theo{
+  margin: 10px 0;
+}
+
+.theory .innerText ul, .theory .innerText ol{
+  padding: 20px 60px;
+}
+
 .aim .innerText p{
   font-size: 30px;
 }
