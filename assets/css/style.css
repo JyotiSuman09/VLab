@@ -22,7 +22,7 @@
   overflow: none;
   width: 100%;
   padding: 30px 0;
-  background: #d1dae380;
+  background: #e7e7e7;
   z-index: 9999;
   border-bottom: 5px solid salmon;
 }
@@ -137,7 +137,7 @@ input[type="radio"],
 }
 .box .quiz .qsns {
   margin: 5px 0px;
-  padding: 40px;
+  padding: 20px 40px;
 }
 .qsns #result {
   color: rgb(7, 52, 201);
