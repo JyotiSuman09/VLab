@@ -170,6 +170,9 @@ input[type="radio"],
   margin: 32px 0;
   flex-wrap: wrap;
 }
+.decoder .max-width .box .sim-box{
+  display: flex;
+}
 .decoder .max-width .box h1 {
   font-size: 35px;
   width: 100%;
@@ -181,6 +184,7 @@ input[type="radio"],
 }
 .ckt{
   flex-wrap: wrap;
+  width: 43rem;
 }
 
 center {
