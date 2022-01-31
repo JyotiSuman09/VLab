@@ -62,11 +62,12 @@ section{
 .innerText p{
   margin: 10px 0;
   padding: 8px 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .theory .innerText p{
   padding: 5px 0;
+  font-size: 1.2  rem;
 }
 .theory .innerText span{
   font-size: 1.5rem;
@@ -81,6 +82,7 @@ section{
 
 .theory .innerText ul, .theory .innerText ol{
   padding: 20px 60px;
+  font-size: 1.2rem;
 }
 
 .aim .innerText p{
@@ -160,9 +162,6 @@ input[type="radio"],
 /* Simulator Styling */
 
 .decoder .max-width .box {
-  border: 3px solid rgba(0, 0, 0, 0.685);
-  border-radius: 8px;
-  box-shadow: 5px 5px 5px grey;
   display: flex;
   flex-direction: column;
   margin: 32px 0;
