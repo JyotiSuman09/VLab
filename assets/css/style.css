@@ -423,6 +423,13 @@ td {
   height: 2.44rem;
 }
 
-@media screen and (max-width: 1600){
-
+@media (max-width: 1600px){
+  .sim-box{
+    display: flex;
+    flex-direction: column;
+  }
+  .ckt{
+    margin: auto;
+    margin-bottom: 30px;
+  }
 }
